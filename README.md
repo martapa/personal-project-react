@@ -1,84 +1,68 @@
-# Bridge Personal Project
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Due Date
-Due by 9am on November 4th 2019
+## Available Scripts
 
-## Wireframes
-For reference we have created an invision prototype to show you the flow of the react application which can be found here: https://bridgeschool.invisionapp.com/public/share/5GWTMSJMH
+In the project directory, you can run:
 
-Please note that you do not need to style the application to match this prototype, it is purely to show you the flow of the application. Feel free to style the application as much (or as little) as you'd like.
+### `yarn start`
 
-## Requirements
+Runs the app in the development mode.<br />
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-- Create a search form with an input that allows you enter a GitHub username and button to fetch the user information for the inputted GitHub username
+The page will reload if you make edits.<br />
+You will also see any lint errors in the console.
 
-- After clicking the search button, you should make an API call to fetch the inputted username's information
+### `yarn test`
 
-- When user information has been returned, hide the form and display the github username with two lists:
-    - The most recent repositories (repos) forked by the username provided
-    - their most recent pull requests.
+Launches the test runner in the interactive watch mode.<br />
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-- Each item in the forked repos list should:
-    - Display the name of the repo as a link— when this link is clicked it should take you to that repo in a new tab
-    - Display the name of the repo it was forked from
-    
- - Each item in the pull request list should:
-     - Display the name of the pull request as a link— when this link is clicked it should take you to that pull request in a new tab
-     - Display the current status of the pull request (Open, Merged, Closed). This can be done by colour coding the list item or display the status in words
+### `yarn build`
 
-- While we recommend trying Test Driven Development (TDD) and writing tests for all of your components, reducers, and helper functions, we ask that you write at least one component test and one helper function test
+Builds the app for production to the `build` folder.<br />
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-## Data Source
-Your data source is the Github API! You'll be using the user, repos, events, and pull requests endpoints. Using the Github API display:
+The build is minified and the filenames include the hashes.<br />
+Your app is ready to be deployed!
 
-- The username
-- The most recent repositories a given user has forked
-- The most recent pull requests a user has created
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-The events endpoint will return all the most recent events (or actions) a user has completed. Everything from opening a pull request to forking a repo to starring a repo. All the different types of events are clarified by a type property. E.g. ForkEvent and PullRequestEvent which you can use to get the info you need. The pull request endpoint will give you the information you need to find out the status of a given pull request (whether its open, closed or merged)
+### `yarn eject`
 
-**EXAMPLES**
-- Users: https://api.github.com/users
-- Repos: https://api.github.com/users/pkanal/repos
-- Events: https://api.github.com/users/pkanal/events
-- Pull Request: https://api.github.com/repos/bridge-school/bridgeschool.io/pulls/39
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-Go to those URLs in your browser to have a look at the JSON response. Its a good idea to copy these as example responses into a file in case you hit the rate limit of the API and that way you can keep on developing.
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-To view these responses in a nice format, install a chrome extension that helps you view JSON, e.g. https://chrome.google.com/webstore/detail/json-formatter/bcjindcccaagfpapjjmafapmmgkkhgoa?hl=en
+Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-## Technical requirements
-React and Redux, of course! You should use create-react-app, a convenient way to bootstrap React apps. You'll also want to install dev-tools browser extensions for React and Redux.
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-You can refer to the finished version of a similar Github app here to get started: https://github.com/melaniebrgr/github-app-with-redux-after/tree/final-20180927-1304.
+## Learn More
 
-## Instructions
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-1. Fork this repository to your own github
-2. Clone the forked version of this repository to your computer 
-3. Set up create react app and make an initial commit to the master branch of your repo
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-**Part One**
-Complete the requirements outlined above using only React (no Redux) and push it up to the master branch of your repo
+### Code Splitting
 
-**Part Two**
-Create a new branch called `redux-solution` and port your React only solution to use Redux. Only complete part two after you have finished part one.
+This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
 
-**Submissions**
-Once you have completed your personal project we'll provide a Google form for you to submit the link to your repo.
+### Analyzing the Bundle Size
 
-If you have any questions, please reach out on slack on the #help-me or #dev-cohort-9 channel! Happy hacking!
+This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
 
-## Stretch Goals
+### Making a Progressive Web App
 
-### Create tests
-Create unit tests for your:
-- Reducer(s)
-- Components
-- Any other helper functions your created
+This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
 
-### Error handling
-Create a form error for when an invalid username is searched prompting the user to try another name
+### Advanced Configuration
 
-### Search another user
-Add a back button to go back to the form to search for another github user
+This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+
+### Deployment
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+
+### `yarn build` fails to minify
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
