@@ -1,9 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
+import {AppContainer} from './App';
+import renderer from 'react-test-renderer';
 
-it('renders without crashing', () => {
-  const div = document.createElement('div');
-  ReactDOM.render(<App />, div);
-  ReactDOM.unmountComponentAtNode(div);
-});
+// describe('App', () => {
+//   test('Should render properly', () => {
+//     const element = renderer.create(<AppContainer />).toJSON();
+//     expect(element).toMatchSnapshot();
+//   });
+// });
