@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<App /> shallow rendering matches the snapshot 1`] = `
+<Fragment>
+  <div>
+    <h2>
+      Recent forks
+    </h2>
+    <Forked />
+    <h2>
+      Recent pull requests
+    </h2>
+    <PullEvents />
+    <button
+      onClick={[Function]}
+    >
+      back button
+    </button>
+  </div>
+</Fragment>
+`;

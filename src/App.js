@@ -6,12 +6,14 @@ import { connect } from "react-redux";
 
 import events from "./events.json";
 
-const Forked = ({ arr }) => {
+export const Forked = ({ arr }) => {
+  console.log(arr)
   const forkedList = arr.map((fork, index) => (
-    <div key={`${fork.name}-${index}`}>
-      <a href={fork.clone_url}></a>
+    <div key={`${fork.full_name}-${index}`}>
+      <a href={fork.clone_url}>
       <h3>{fork.full_name}</h3>
       <p>{`Forked from: ${fork.parent_name}`}</p>
+      </a>
     </div>
   ));
 
@@ -21,16 +23,17 @@ const Forked = ({ arr }) => {
 const PullEvents = ({ arr }) => {
   const pullList = arr.map(pull => (
     <div key={pull.repo_name}>
-      <a href={pull.url}></a>
+      <a href={pull.url}>
       <h3>{pull.repo_name}</h3>
       <p>{`Status: ${pull.status}`}</p>
+      </a>
     </div>
   ));
 
   return <div className="row">{pullList}</div>;
 };
 
-function App({ isLoading, repos, events, fetchApiData, setIsLoading }) {
+export function App({ isLoading, repos, events, fetchApiData, setIsLoading }) {
   const [githubUser, setUser] = useState("pkanal");
 
   const handleBackButton = e => {
