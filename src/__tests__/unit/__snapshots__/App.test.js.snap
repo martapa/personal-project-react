@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<App /> shallow rendering matches the snapshot 1`] = `
+<Fragment>
+  <form
+    onSubmit={[Function]}
+  >
+    <label>
+      Github username:
+      <input
+        name="name"
+        onChange={[Function]}
+        type="text"
+        value="pkanal"
+      />
+    </label>
+    <input
+      type="submit"
+      value="Submit"
+    />
+  </form>
+</Fragment>
+`;
